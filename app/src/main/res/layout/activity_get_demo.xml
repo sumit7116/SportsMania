@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".GetDemoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_prerecordedvideos"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/design_borderofdemobutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/img_playvideo1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_demoyt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pre-Recorded \nVideos"
+            android:fontFamily="@font/urbanistsemibold"
+            android:textColor="@color/purple_500"
+            android:textAlignment="center"
+            android:layout_below="@id/img_playvideo1"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_requestdemovideos"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/design_borderofdemobutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel_prerecordedvideos">
+        <ImageView
+            android:id="@+id/img_playvideo2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_demolive"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Live \nDemo"
+            android:fontFamily="@font/urbanistsemibold"
+            android:textColor="@color/purple_500"
+            android:textAlignment="center"
+            android:layout_below="@id/img_playvideo2"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:layout_marginTop="15dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_500">
+        <ImageView
+            android:id="@+id/img_sport"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/img_cricket"
+            android:scaleType="centerCrop"
+            android:foreground="#6B000000"
+            />
+        <TextView
+            android:id="@+id/txt_sportname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cricket"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="42dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginLeft="7dp"
+            android:fontFamily="@font/urbanistsemibold"/>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:background="@color/purple_500"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="38dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/img_sport"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_play_circle_24"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Live Score"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

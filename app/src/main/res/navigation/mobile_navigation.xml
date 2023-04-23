@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sumitsoftwares.sportsmania.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_applynow"
+        android:name="com.sumitsoftwares.sportsmania.ui.ApplyNowFragment"
+        android:label="Apply Now"
+        tools:layout="@layout/fragment_apply_now" />
+
+    <fragment
+        android:id="@+id/nav_applications"
+        android:name="com.sumitsoftwares.sportsmania.ui.ApplicationsFragment"
+        android:label="Applications"
+        tools:layout="@layout/fragment_applications" />
+
+    <fragment
+        android:id="@+id/nav_getdemo"
+        android:name="com.sumitsoftwares.sportsmania.ui.GetDemoFragment"
+        android:label="Get Demo"
+        tools:layout="@layout/fragment_get_demo" />
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.sumitsoftwares.sportsmania.ui.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+
+</navigation>

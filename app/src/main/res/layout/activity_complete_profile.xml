@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="296dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_signup" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/urbanistbold"
+            android:text="Complete Profile"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="please enter details below to continue"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <EditText
+                android:id="@+id/et_fname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Your First Name"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittextlogin"/>
+            <EditText
+                android:id="@+id/et_lname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Your Last Name"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittextlogin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/grp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/gen_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/urbanistsemibold"/>
+                <RadioButton
+                    android:id="@+id/gen_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/urbanistsemibold"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Your Mail"
+                android:enabled="false"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittextlogin"/>
+            <EditText
+                android:id="@+id/et_mobno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Mobile Number"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:inputType="phone"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittextlogin"/>
+            <EditText
+                android:id="@+id/et_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Your City"
+                android:paddingStart="10dp"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittextlogin"/>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_signup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="7dp"
+                android:layout_marginBottom="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/purple_500"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIGN UP"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/urbanistbold"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

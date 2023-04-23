@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingPageActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_holeyball"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:foreground="#A4000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_holyball"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mainwhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_login"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_500">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Login"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_getdemo"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/card_login"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_500">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:gravity="center"
+                        android:text="Get Demo"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_getdemo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.8"
+                    android:background="@color/purple_500">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="WE ARE SPORT MANIA"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_secondtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:text="TRADITION PRIDE &amp; FUTURE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_title" />
+
+            <TextView
+                android:id="@+id/txt_thirdtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing/n elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibu."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_secondtitle" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_applynow"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_thirdtitle">
+
+                <LinearLayout
+                    android:id="@+id/linear_applynow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_500">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:gravity="center"
+                        android:text="Apply Now"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/achievementsConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_achievements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanistsemibold"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="8dp"
+                    android:text="ACHIEVEMENTS"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt_victory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="VICTORY IS IN THE DNA"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_achievements" />
+
+            <LinearLayout
+                android:id="@+id/linear_statsmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_victory"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24+"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/urbanistsemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Successful \nPlayers"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/urbanistregular"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24+"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/urbanistsemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Successful \nStudents"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/urbanistregular"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24+"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:fontFamily="@font/urbanistsemibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Premiere \nLeguages"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/urbanistregular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/aboutConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/img_img2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="#83000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/team1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="ABOUT THE CLUB"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="175dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/purple_500"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="WELCOME TO THE HOME OF\n SPORTS MANIA ACADEMY"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing/n elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibu."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/urbanistsemibold"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:layout_marginBottom="50dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <LinearLayout
+                    android:id="@+id/linear_ContactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_500">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/urbanistsemibold"
+                        android:gravity="center"
+                        android:text="Contact Us"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/knowmoreConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/purple_500">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_knowmore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanistsemibold"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="8dp"
+                    android:text="KNOW MORE"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="ACADEMY OVERVIEW"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_knowmore" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="130dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_headquarterground"
+                            android:orientation="vertical"
+                           >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CLUB HEADQUATERS"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/urbanistbold"
+                            android:layout_marginTop="110dp"
+                            android:textSize="10sp"
+                            />
+                        <LinearLayout
+                            android:layout_width="97dp"
+                            android:layout_height="2dp"
+                            android:background="@color/purple_500"
+                            android:layout_marginTop="1dp"
+                            />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_headquarterground"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TRAINING CENTER"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/urbanistbold"
+                                android:layout_marginTop="110dp"
+                                android:textSize="10sp"
+                                />
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="2dp"
+                                android:background="@color/purple_500"
+                                android:layout_marginTop="1dp"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="130dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/img_headquarterground"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="110dp"
+                                android:fontFamily="@font/urbanistbold"
+                                android:text="TRAINING GROUND"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+
+                            <LinearLayout
+                                android:layout_width="97dp"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/purple_500" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

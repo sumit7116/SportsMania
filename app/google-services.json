@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "508395640627",
+    "firebase_url": "https://sportsmania-6efc2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sportsmania-6efc2",
+    "storage_bucket": "sportsmania-6efc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508395640627:android:6b3d73ed9fe19b57df5046",
+        "android_client_info": {
+          "package_name": "com.sumitsoftwares.sportsmania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508395640627-2cp4uvd3dllfd2v2rkh37hb534nin359.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sumitsoftwares.sportsmania",
+            "certificate_hash": "19edaa6f971ed7707b2762869d5cb8bb9a9abd1b"
+          }
+        },
+        {
+          "client_id": "508395640627-h9vqmdb9c3hjerc5ijds7qev2bnmd92e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sumitsoftwares.sportsmania",
+            "certificate_hash": "f196e7890412ec823947807d8d6e00503718936e"
+          }
+        },
+        {
+          "client_id": "508395640627-hnf1kn374385i62jfj1oucrov6vsn7jb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sumitsoftwares.sportsmania",
+            "certificate_hash": "897472ac1a630c111337f757c8647406f2472a9f"
+          }
+        },
+        {
+          "client_id": "508395640627-p5btgj6ikstmn7819tu9erro542lu81h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFTgZAu1sZX9pMWEdPNuo7tYjzrk4U-Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508395640627-p5btgj6ikstmn7819tu9erro542lu81h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508395640627:android:f5e95b5028151121df5046",
+        "android_client_info": {
+          "package_name": "com.sumitsoftwares.sportsmaniaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508395640627-pie7fi3i2ejbde6658fbvuhnrut4f32r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sumitsoftwares.sportsmaniaadmin",
+            "certificate_hash": "f196e7890412ec823947807d8d6e00503718936e"
+          }
+        },
+        {
+          "client_id": "508395640627-p5btgj6ikstmn7819tu9erro542lu81h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFTgZAu1sZX9pMWEdPNuo7tYjzrk4U-Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508395640627-p5btgj6ikstmn7819tu9erro542lu81h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
